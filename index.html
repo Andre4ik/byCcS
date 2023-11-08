@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сайт с ссылками на социальные сети</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      background-color: black;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      gap: 20px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #808080;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 8px 15px;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+
+    a:hover {
+      background-color: rgb(107, 142, 255);
+      color: #808080;
+      box-shadow: 0 0 20px rgb(107, 142, 255), 0 0 20px rgb(107, 142, 255), 0 0 20px rgb(107, 142, 255), 0 0 20px rgb(107, 142, 255);
+      text-shadow: 0 0 10px rgb(107, 142, 255), 0 0 20px rgb(107, 142, 255), 0 0 30px rgb(107, 142, 255), 0 0 40px rgb(107, 142, 255);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="back-ground/CastCrazeShow(1).mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+  <ul>
+    <li>
+      <a href="https://www.tiktok.com/@castcrazeshow">
+        <img src="https://cdn-icons-png.flaticon.com/128/3046/3046126.png" alt="TikTok" width="80" height="80">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/@CastCrazeShow">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt="YouTube" width="80" height="80">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/?app=desktop&hl=ru&gl=UA">
+        <img src="https://cdn-icons-png.flaticon.com/128/2597/2597143.png" alt="Дональный алерт" width="80" height="80">
+      </a>
+    </li>
+  </ul>
+  <footer>ByCastCrazeShow</footer>
+</body>
+</html>
